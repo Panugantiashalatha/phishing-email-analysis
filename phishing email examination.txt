@@ -1,0 +1,78 @@
+Phishing Email Analysis Report
+
+1. Introduction
+
+This report documents the analysis of a suspected phishing email. The investigation followed six steps: obtaining a phishing email sample, examining the sender address, analyzing headers, reviewing links and attachments, checking for urgent or threatening language, and verifying mismatched URLs.
+
+
+---
+
+2. Sample Email Obtained
+
+The sample email analyzed had the subject line:
+“are you in the mood XGHTMTGGC”
+
+The body content promoted the sale of pharmaceutical products such as Viagra, Xenical, and Zyban at discounted rates. The message also included links to external websites for purchasing and an "unsubscribe" link.
+
+
+---
+
+3. Sender Email Address Analysis
+
+The sender’s address was listed as svzss@wanadoo.fr. However, the delivery path traced through unrelated mail servers, which is inconsistent with the claimed domain. This indicates the sender address was spoofed.
+
+
+---
+
+4. Header Analysis
+
+The email header was analyzed using MXToolbox. The results showed:
+
+SPF Alignment: Failed
+
+SPF Authentication: Failed
+
+DKIM Alignment: Failed
+
+DKIM Authentication: Failed
+
+DMARC Compliance: Failed
+
+
+These failures confirm that the message was not legitimately sent from the claimed domain and was instead forged.
+
+
+---
+
+5. Suspicious Links and Attachments
+
+Two links were identified in the email body:
+
+http://www.great-meds.com/main2.php?nc=3D18148
+
+http://greenzer.com/remove.php
+
+
+The first link redirects to a pharmaceutical sales website. The second link, presented as an “unsubscribe” option, is a common tactic used by spammers to validate active email addresses. No attachments were present in this sample.
+
+
+---
+
+6. Urgent or Threatening Language
+
+The email encouraged quick action by highlighting “much reduced rate” and promising discreet, swift delivery. This persuasive and urgent tone is typical of phishing and spam campaigns, attempting to pressure the recipient into clicking the link.
+
+
+---
+
+7. Mismatched URLs
+
+Hovering over the links revealed that while the text suggested legitimate purposes (pricing info, unsubscribe), the actual URLs redirected to suspicious domains unrelated to the supposed sender.
+
+
+---
+
+8. Conclusion
+
+The analyzed email is confirmed to be a phishing/spam attempt. Indicators include spoofed sender information, failed SPF/DKIM/DMARC checks, the presence of suspicious links, mismatched URLs, and manipulative language.
+Recipients are advised not to click on any links, not to reply, and to delete the email immediately.
